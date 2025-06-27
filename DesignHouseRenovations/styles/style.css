@@ -1,0 +1,812 @@
+@charset "utf-8";
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333333;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 img {
+    width: 400px;
+}
+header nav ul {
+    display: flex;
+}
+header nav .pc li {
+    margin: 0 0 0 40px;
+}
+header nav ul li a {
+    font-size: 16px;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+    margin-top: 219px;
+}
+
+img .hero {
+    width: 100%;
+}
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+section {
+    margin-top: 160px;
+}
+.conceptArea, .serviceArea, .qaArea {
+    flex-basis: 1020px;
+}
+.translation {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    margin: 16px 0 48px;
+}
+.translation::before, .translation::after {
+    content: '';
+    width: 60.5px;
+    height: 1px;
+    background-color: #223E69;
+}
+.translation::before {
+    margin-right: 8px;
+}
+.translation::after {
+    margin-left: 8px;
+}
+.flowArea .translation {
+    color: #B71B26;
+}
+.flowArea .translation::before, .flowArea .translation::after {
+    background-color: #B71B26;
+}
+h3 {
+    font-size: 28px;
+    text-align: center;
+    margin: 48px 0 24px;
+    font-weight: 500;
+}
+.serviceImages {
+    display: flex;
+    justify-content: space-between;
+}
+.serviceImages figure {
+    width: 300px;
+}
+.serviceImages img {
+    width: 300px;
+}
+.explanations {
+  padding: 0 173px;
+}
+p {
+    font-size: 16px;
+    letter-spacing: .05em;
+}
+figcaption {
+    font-size: 24px;
+    text-align: center;
+    margin: 16px 0;
+}
+.conceptEx {
+    line-height: 2;
+   text-align: justify;
+}
+.imagesEx {
+    line-height: 1.5;
+    text-align: justify;
+}
+.moreBtn {
+    position: relative;
+    left: 250px;
+    display: flex;
+    margin-top: 16px;
+}
+.serviceImages .moreBtn a:hover {
+    text-decoration: underline;
+}
+.arrow_s {
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+  }
+  .arrow_s:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4.5px 0 4.5px 4px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    bottom: 1px;
+    margin: auto;
+  }
+
+.flowArea {
+    background-color: rgba(34, 62, 105, 0.05);
+    position: relative;
+    width: 100vw;
+    height: 498px;
+    padding: 48px;
+    margin: 0 calc(50% - 50vw);
+    margin-top: 160px;
+}
+.flowUl {
+    writing-mode: vertical-lr;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 920px;
+    position: relative;
+    margin: 0 auto;
+}
+.flowUl li {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 0px 16px;
+    height: 280px;
+    border-radius: 60px;
+    font-size: 28px;
+}
+.sodan::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent rgba(183, 27, 38, .6);
+    position: absolute;
+    left: 101px;
+    top: 109px;
+}
+.chosa::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent rgba(183, 27, 38, .7);
+    position: absolute;
+    left: 273px;
+    top: 109px;
+}
+.mitsumori::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent rgba(183, 27, 38, .8);
+    position: absolute;
+    left: 445px;
+    top: 109px;
+}
+.keiyaku::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent rgba(183, 27, 38, .9);
+    position: absolute;
+    right: 273px;
+    top: 109px;
+}
+.sekou::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent #B71B26;
+    position: absolute;
+    right: 101px;
+    top: 109px;
+}
+
+.ffSerif, .submitBtn {
+    font-family: "Noto Serif JP", serif;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1020px;
+    position: relative;
+    left: 173px;
+    padding-top: 48px;
+}
+form p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nameForm {
+    background-color: #ffffff;
+    margin-top: 24px;
+    padding: 17px 58.5px;
+}
+.addressNum {
+    background-color: #ffffff;
+    margin-top: 24px;
+    height: 52px;
+    width: 222px;
+}
+.address, input[type="email"] {
+    background-color: #ffffff;
+    margin-top: 24px;
+    height: 52px;
+    width: 664px;
+}
+textarea {
+    background-color: #ffffff;
+    margin-top: 24px;
+    height: 208px;
+    width: 664px;
+}
+.required {
+    margin-left: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0.3px 12px 1px;
+    background-color: #B71B26;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.zipCode {
+    font-size: 20px;
+    vertical-align: -15px;
+    margin-right: 4px;
+}
+.submitBtn {
+    text-align: center;
+}
+input[type="submit"] {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 24px 43px;
+    margin: 48px 0;
+    letter-spacing: 0.1em;
+}
+input[type="submit"]:hover {
+    opacity: 0.8;
+    margin-left: 10px;
+    transition-property: background-color, margin-left;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+}
+.submitBtn::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9.5px 0 9.5px 9px;
+    border-color: transparent transparent transparent #ffffff;
+    position: relative;
+    right: 40px;
+    top: 4px;
+}
+.contactColor {
+    background-color: rgba(34, 62, 105, 0.15);
+    position: relative;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    height: 1218px;
+}
+.contactArea h2 {
+    padding-top: 48px;
+}
+.contactArea input[type=radio] {
+    opacity: 0;
+    position: absolute;
+}
+.contactArea input[type="radio"]+span {
+    display: inline-block;
+    position: relative;
+    padding: 0.3em 0.5em 0.3em 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+.contactArea input[type=radio] + span::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    top: 2px;
+    left: 0px;
+}
+.contactArea input[type=radio]:checked + span::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 8px solid #339999;
+    top: 2px;
+    left: 0px;
+    box-sizing: border-box;
+    }    
+th {
+    text-align: right;
+    vertical-align: middle;
+    padding: 0 14px;
+}
+.question {
+    position: absolute;
+    left: 43px;
+    bottom: 358px;
+}
+
+.q {
+    font-size: 34px;
+    font-family: "Noto Serif JP", serif;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 26px;
+    line-height: 2;
+    padding: 0 5px 3px 9px;
+    margin-right: 8px;
+}
+.a {
+    font-size: 34px;
+    font-family: "Noto Serif JP", serif;
+    background-color: #B71B26;
+    color: #ffffff;
+    border-radius: 26px;
+    line-height: 2;
+    padding: 0 5px 3px 9px;
+    margin-right: 8px;
+}
+.qaText {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1,5;
+}
+.q1 {
+    margin-bottom: 58px;
+}
+.qaList {
+    list-style: none;
+    text-indent: -3.5em;
+    padding-left: 3.5em;
+}
+.hero {
+    display: block !important;
+}
+.sp {
+    display: none !important;
+}
+.gMenu {
+    display: none;
+}
+.gotop{
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #333333;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+.gotop::before{
+    content: "";
+    display: block;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    width: 40%;
+    height: 40%;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.gotop:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+.hero, .pc {
+    display: none !important;
+}
+.sp {
+    display: block !important;
+}
+img .sp {
+    width: 100%;
+}
+
+section, .serviceImages figure, .flowArea, .flowUl, form, .colored {
+    width: 100%;
+}
+.explanations {
+    padding: 0 12px;
+}
+header {
+    height: 51.71px;
+    position: relative;
+    padding: 0;
+}
+header h1 img {
+    height: 19.71px;
+    width: 240px;
+    margin-left: 12px;
+}
+main img {
+    width: 100%;
+}
+.conceptArea, .serviceArea, .flowArea, .qaArea {
+   margin-top: 40px;
+   padding-bottom: 40px;
+}
+.contactArea {
+    margin-top: 40px;
+    position: relative;
+}
+h2 {
+    font-size: 28px;
+}
+.translation {
+    font-size: 12px;
+    padding-bottom: 24px;
+}
+h3 {
+    margin: 0 auto 16px;
+}
+h3, figcaption, .q, .a {
+    font-size: 20px;
+}
+figcaption {
+    margin: 8px 0;
+}
+.conceptEx, .imagesEx {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.qaText {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.qaList {
+    list-style: none;
+    text-indent: -2.7em;
+    padding-left: 2.7em;
+   
+}
+.q1 {
+    margin-bottom: 24px;
+}
+.q, .a { 
+    padding: 0 4px 3px 8px;   
+    line-height: 1em;
+}
+.questionSP {
+    margin-bottom: 16px;
+}
+
+.serviceImages {
+    display: block;
+}
+.serviceImages img {
+    width: 100%;
+}
+.moreBtn {
+    position: relative;
+    left: 296px;
+    display: flex;
+    margin-top: 8px;
+}
+
+.figureMargin {
+    margin-top: 48px;
+}
+
+.flowUl {
+   writing-mode: horizontal-tb;
+   display: block;
+   width: 300px;
+   margin: 0 auto;
+}
+.flowUl li {
+    padding: 8px 0px;
+    height: 32px;
+    border-radius: 60px;
+    font-size: 16px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.flowArea {
+    background-color: rgba(34, 62, 105, 0.05);
+    position: relative;
+    width: 100vw;
+    height: 456px;
+    padding: 16px;
+    margin-top: 40px;
+}
+.sodan::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: rgba(183, 27, 38, .6) transparent transparent transparent;
+    position: absolute;
+    left: 134px;
+    top: 40px;
+}
+.chosa::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: rgba(183, 27, 38, .7) transparent transparent transparent;
+    position: absolute;
+    left: 134px;
+    top: 40px;
+}
+.mitsumori::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: rgba(183, 27, 38, .8) transparent transparent transparent;
+    position: absolute;
+    left: 134px;
+    top: 40px;
+}
+.keiyaku::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: rgba(183, 27, 38, .9) transparent transparent transparent;
+    position: absolute;
+    left: 134px;
+    top: 40px;
+}
+.sekou::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: #B71B26 transparent transparent transparent;
+    position: absolute;
+    left: 134px;
+    top: 40px;
+}
+
+.contactColor {
+    background-color: rgba(34, 62, 105, 0.15);
+    position: relative;
+    width: 100vw;
+    height: 952px;
+}
+.contactArea .translation {
+    padding-bottom: 0;
+}
+form {
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    left: 12px;
+    padding-top: 0px;
+}
+th {
+    display: inline-block;
+    margin-top: 24px;
+}
+td {
+    display: block;
+}
+.shiryou {
+    padding-top: 16px;
+}
+table {
+   text-align: center;
+}
+.nameForm, input[type="email"] {
+    margin-top: 8px;
+    width: 351px;
+    height: 30px;
+}
+.addressNum {
+    margin-top: 8px;
+    height: 30px;
+    width: 125px;
+}
+.addressRow {
+    position: relative;
+    left: -100px;
+}
+.address {
+    height: 30px;
+    width: 351px;
+    margin-top: -20px;
+}
+textarea {
+    margin-top: 8px;
+    height: 120px;
+    width: 351px;
+}
+.required {
+    margin-left: 4px;
+    font-size: 10px;
+    padding: 0.3px 10px 1px;
+}
+.zipCode {
+    font-size: 14px;
+    vertical-align: -5px;
+    margin-right: 4px;
+}
+.question {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.translation {
+    margin: 8px 0 0px;
+}
+.contactArea h2 {
+    padding-top: 16px;
+}
+.contactArea input[type=radio] + span::before {
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    left: 10px;
+}
+.contactArea input[type=radio]:checked + span::after {
+    width: 16px;
+    height: 16px;
+    border: 6px solid #339999;
+    top: 7px;
+    left: 10px;
+    }    
+input[type="submit"] {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 16px 26.5px 16px 16.5px;
+    margin: 24px 0;
+    letter-spacing: 0.1em;
+}
+.submitBtn::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #ffffff;
+    position: relative;
+    right: 23px;
+    top: 3px;
+}
+
+footer {
+    padding: 16px;
+    margin-top: 126px;
+}
+
+.gMenu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+  }
+  .gMenu .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding-top: 12px;
+    height: 12px;
+  }
+  .gMenu .menu-icon .navicon {
+    background: #B71B26;
+    display: block;
+    height: 2px; 
+    width: 31px; 
+    position: relative;
+    transition: background .4s ease-out; 
+  }
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #B71B26; 
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out; 
+    width: 100%;
+  }
+  .gMenu .menu-icon .navicon::before {top: 10px;} 
+  .gMenu .menu-icon .navicon::after {top: -10px;} 
+  .gMenu .menu {
+    background-color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height .6s; 
+    text-align: center;
+    display: block;
+  }
+  .gMenu .menu li:first-of-type {
+    padding-top: 50px;
+  }
+  .gMenu .menu li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .gMenu .menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  .gMenu .menu-btn {
+    display: none;
+  }
+  .gMenu .menu-btn:checked ~ .menu {
+    max-height: 532px; 
+    transition: max-height .6s;
+  }
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+
+.gotop{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    bottom: -130px;
+    right: 5px;
+}
+.gotop::before{
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    bottom: 0;
+}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Yuwa's portfolio</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="onlyPC">
+            <nav>
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#socialMedia">SNS</a></li>
+                <li>
+                <form id="form">
+                    <select name="select">
+                        <option value="index-en.html">English</option>
+                        <option value="index-ja.html">日本語</option>
+                    </select>
+                </form>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="onlySP">
+            <div class="hamburger" id="openNav">
+                <img src="images/hamburger.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <div class="heroArea">
+            <p>ようこそ！
+            <br>ポートフォリオをご覧いただきありがとうございます。</p>
+            <img src="images/profile.JPG" alt="profilePic">
+        </div>
+
+        <section id="aboutMe">
+            <h1>About Me</h1>
+            
+            <figure class="teacher">
+                <img src="images/teacher.jpg" alt="">     
+                <figcaption>
+                <h2>教員経験</h2>   
+                3年間、高校の英語教員として勤務しました。弓道部の主顧問も任されていました。
+                    <br>ボランティアとして、2年間セネガルの現地小学校で算数と音楽を教えました。
+                </figcaption>
+            </figure>   
+            <figure class="africa">
+                <img src="images/africa.jpg" alt="">
+                 <figcaption>
+                <h2>アフリカ好き</h2>
+                JICAのボランティアとして、セネガルに2年間住んでいました。 
+                    <br>セネガルの人々、文化、そしてもちろん料理が大好きです！
+                    <br>セネガルが恋しくなると、 <span class="italic">「チェブジェン」</span>という料理を自分で作ります。
+                </figcaption>
+            </figure>
+        </section>
+        <section id="myWork">
+            <h1>My Work</h1>
+            <p>職業訓練校のプログラミングコース(半年間)に通い、HTML、CSS、JavaScript、PHPを学んでいます。
+                <br><br>作品リンクはこちら</p>
+            <li><a href="DesignHouseRenovations/index.html" target="_blank">架空のリフォーム会社HP</a></li>
+            <p><span class="workHour">制作時間： 54時間</span></p>
+            <li><a href="Taiwan/taichu/index.html" target="_blank">台湾観光サイト</a></li>
+            <p><span class="workHour">制作時間： 54時間×3人</span></p>
+                <p><span class="workHour">担当箇所： 台中ページ、共通パーツ（ローディング画面・ヘッダー・フッター・ドロワー・モーダル）</span></p>
+            </p>
+            <p><br> ソースコードはこちらのリンクから<br class="onlySP"> → <a href="https://github.com/YuwaYamamoto/Aminata" target="_blank">GitHub</a></p>
+            <p>現在のスキル</p>
+            <ul>
+                <li>HTML: 基本的なコーディングが可能</li>
+                <li>CSS: 基本的なコーディングが可能</li>
+                <li>JavaScript: 調べながら実践中</li>
+                <li>PHP: 今後学習予定</li>
+            </ul>
+        </section>
+        <section id="socialMedia">
+            <h1>SNS</h1>
+            <p>アフリカでの経験を投稿しています。ぜひご覧ください！</p>
+            <ul>
+                <li><a href="https://www.instagram.com/yuwa_afrique_senegal?igsh=MThwbXdhaTJlNDVxMw%3D%3D&utm_source=qr" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@yuwa_afrique?_t=ZS-8xLlJu97uIp&_r=1" target="_blank">TikTok</a></li>
+                <li><a href="https://world-diary.jica.go.jp/yajimayuwa/" target="_blank">Blog</a></li>
+            </ul>
+        </section>
+        <a href="#" id="pageTop">Top</a>
+    </main>
+    <footer>
+        <small>&copy; 2025 Yuwa</small>
+    </footer>
+</div>
+
+<nav id="nav" class="onlySP">
+<ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#socialMedia">SNS</a></li>
+                <li>
+                <form id="formSP">
+                    <select name="select">
+                        <option value="" selected>Select Language</option>
+                        <option value="index-en.html">English</option>
+                        <option value="index-ja.html">日本語</option>
+                    </select>
+                </form>
+                </li>
+            </ul>
+</nav>
+
+    <script src="common/jquery-3.4.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

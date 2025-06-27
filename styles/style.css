@@ -1,0 +1,325 @@
+@charset "utf-8";
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+    background-color: antiquewhite;
+    color: rgb(99, 26, 26);
+}
+/*ヘッダー*/
+.onlySP {
+    display: none;
+}
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    color: white;
+}
+header ul {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 15px 0;
+    align-items: center;
+}
+header ul a {
+    transition: letter-spacing 0.3s;
+}
+header ul a:hover {
+    letter-spacing: 0.05em;
+}
+
+ 
+#form, #formSP {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+#form::after, #formSP::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #535353;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+#form select, #formSP select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    font-size: 18px;
+}
+.heroArea {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+.heroArea p {
+    font-size: 40px;
+    width: 40vw;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.heroArea img {
+    width: 30vw;
+}
+section {
+    width: 1160px;
+    margin: 80px auto;
+}
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    padding: 0.25em 0;
+}
+h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+    background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+
+/*About Me*/
+#aboutMe img {
+    width: 20vw;
+    margin: 20px 0;
+    object-fit: cover;
+}
+#aboutMe figcaption {
+    font-size: 20px;
+    width: 45vw;
+    line-height: 1.5;
+}
+#aboutMe h2 {
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+.teacher {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.africa {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+figcaption .italic {
+    font-style: italic;
+}
+
+/*My Works*/
+#myWork a:hover {
+    opacity: .7;
+}
+#myWork p {
+    font-size: 20px;
+    padding-left: 30px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+#myWork a {
+    font-size: 18px;
+    text-decoration: underline;
+    padding-left: 20px;
+    line-height: 2;
+}
+.workHour {
+    font-size: 18px;
+    line-height: 1;
+    padding-left: 20px;
+}
+#myWork ul {
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 1.5;
+}
+/*Social Media*/
+#socialMedia p {
+    font-size: 20px;
+    padding-left: 40px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+#socialMedia ul {
+    display: flex;
+    justify-content: space-around;
+}
+#socialMedia a {
+    display: block;
+    padding: 20px 0;
+    width: 150px;
+    background-color: rosybrown;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+    margin: 50px 0;
+}
+#socialMedia a:hover {
+    background-color: #ffffff;
+    color: rgb(188, 143, 143);
+}
+
+/*footer*/
+#pageTop {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 100;
+    background-color:  rgba(0, 0, 0, .25);
+    padding: 15px 8px;
+    border-radius: 50%;
+    z-index: 100;
+}
+#pageTop:hover {
+    opacity: 0.7;
+}
+footer {
+    text-align: center;
+}
+small {
+    padding: 10px 0;
+    display: block;
+    border-top: 1px solid rgb(99, 26, 26);
+}
+
+@media screen and (max-width: 768px) {
+    .onlyPC {
+        display: none;
+    }
+    .onlySP {
+        display: block;
+    }
+    /*ヘッダー　レスポンシブ*/
+    header {
+        background-color: antiquewhite;
+        position: relative;
+    }
+    header ul {
+        display: block;
+    }
+    .hamburger {
+        align-self: center;
+        color: #ffffff;
+        width: 40px;
+        position: absolute;
+        right: 10px;
+        top: -60px;
+    }
+    #formSP select {
+        font-size: 14px;
+    }
+    .heroArea {
+        display: block;
+        text-align: center;
+    }
+    .heroArea p {
+        font-size: 28px;
+        width: 80vw;
+        text-align: left;
+        margin: 0 auto 20px;
+        line-height: 1.2em;
+    }
+    .heroArea img {
+        width: 80vw;
+    }
+    section {
+        width: 80vw;
+        margin: 40 auto;
+    }
+    /*about me レスポンシブ*/
+    #aboutMe img {
+        width: 100%;
+    }
+    #aboutMe figcaption {
+        width: 100%;
+    }
+    .teacher {
+        display: block;
+    }
+    .africa {
+        display: block;
+    }
+    
+    /*MyWorkレスポンシブ*/
+    #myWork p {
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    #myWork a {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .workHour {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    #myWork ul {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    /*SocialMediaレスポンシブ*/
+    #socialMedia p {
+        padding-left: 0px;
+    }
+    #socialMedia ul {
+        display: block;
+    }
+    #socialMedia a {
+        margin: 30px auto;
+        width: 100%;
+    }
+    #pageTop {
+        bottom: 10px;
+        right: 5px;
+        padding: 12px 5px;
+    }
+    /*ドロワー*/
+    #nav {
+        position: fixed;
+        right: -270px;
+        top: 0;
+        width: 270px;
+        height: 100%;
+        padding: 48px 24px 0 24px;
+        background: rosybrown;
+        color: white;
+    }
+    #nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #nav li a {
+        display: block;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid antiquewhite;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+    #nav form {
+        margin-top: 20px;
+    }
+    .show {
+        transform: translate3d(-270px, 0, 0);
+    }
+    #wrapper, #nav {
+        transition: transform 0.3s;
+    }
+}

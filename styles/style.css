@@ -103,7 +103,6 @@ h1:after {
     line-height: 1.5;
 }
 #aboutMe h2 {
-    
     font-size: 24px;
     font-weight: bold;
 }
@@ -125,11 +124,16 @@ figcaption .italic {
 #myWork a:hover {
     opacity: .7;
 }
-#myWork p {
+.aboutMywork {
     font-size: 20px;
     padding-left: 30px;
     line-height: 1.5;
     margin: 20px 0;
+}
+#myWork h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0 0 30px;
 }
 #myWork a {
     font-size: 18px;
@@ -139,14 +143,20 @@ figcaption .italic {
 }
 .workHour {
     font-size: 18px;
-    line-height: 1;
-    padding-left: 20px;
+    line-height: 1.5;
+    padding-left: 40px;
 }
 #myWork ul {
     font-size: 18px;
     padding-left: 40px;
     line-height: 1.5;
 }
+.aboutPractice {
+    font-size: 18px;
+    padding: 20px 0 30px 40px;
+    line-height: 1.5;
+}
+
 /*Social Media*/
 #socialMedia p {
     font-size: 20px;
@@ -161,7 +171,7 @@ figcaption .italic {
 #socialMedia a {
     display: block;
     padding: 20px 0;
-    width: 150px;
+    width: 250px;
     background-color: rosybrown;
     color: #ffffff;
     font-weight: bold;
@@ -257,21 +267,29 @@ small {
     }
     
     /*MyWorkレスポンシブ*/
-    #myWork p {
+    .aboutMywork {
         padding-left: 0px;
         font-size: 18px;
     }
+    #myWork h2 {
+        padding: 10px 0;
+    }
     #myWork a {
-        padding-left: 10px;
+        padding-left: 0;
         font-size: 16px;
     }
     .workHour {
         font-size: 16px;
-        padding-left: 30px;
+        padding-left: 0;
     }
     #myWork ul {
         padding-left: 10px;
         font-size: 16px;
+    }
+    .aboutPractice {
+        font-size: 16px;
+        padding: 20px 0 30px;
+        line-height: 1.5;
     }
     /*SocialMediaレスポンシブ*/
     #socialMedia p {

@@ -155,6 +155,16 @@ figcaption .italic {
     padding: 20px 0 30px 40px;
     line-height: 1.5;
 }
+.practices {
+    display: flex;
+    justify-content: space-between;
+}
+.practice1, .practice2 {
+    width: 40vw;
+}
+.practices img {
+    width: 40vw;
+}
 
 /*Social Media*/
 #socialMedia p {
@@ -291,6 +301,13 @@ small {
         padding: 20px 0 30px;
         line-height: 1.5;
     }
+    .practices {
+        display: block;
+    }
+    .practice1, .practice2 {
+        width: 100%;
+    }
+
     /*SocialMediaレスポンシブ*/
     #socialMedia p {
         padding-left: 0px;

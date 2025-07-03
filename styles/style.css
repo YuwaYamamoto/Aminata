@@ -125,25 +125,23 @@ figcaption .italic {
 }
 .aboutMywork {
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 1.5;
     margin: 20px 0;
 }
 #myWork h2 {
     font-size: 20px;
     font-weight: bold;
-    padding: 10px 0 0 30px;
+    padding: 10px 0 0;
 }
 #myWork a {
     font-size: 18px;
     text-decoration: underline;
-    padding-left: 20px;
     line-height: 2;
 }
 .workHour {
     font-size: 18px;
     line-height: 1.5;
-    padding-left: 40px;
 }
 #myWork ul {
     font-size: 18px;
@@ -152,18 +150,19 @@ figcaption .italic {
 }
 .aboutPractice {
     font-size: 18px;
-    padding: 20px 0 30px 40px;
+    padding: 20px 0 30px;
     line-height: 1.5;
 }
 .practices {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .practice1, .practice2 {
     width: 40vw;
 }
 .practices img {
     width: 40vw;
+    margin: 20px 0;
 }
 
 /*Social Media*/
@@ -305,6 +304,9 @@ small {
         display: block;
     }
     .practice1, .practice2 {
+        width: 100%;
+    }
+    .practices img {
         width: 100%;
     }
 

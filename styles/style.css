@@ -118,6 +118,96 @@ h1:after {
 figcaption .italic {
     font-style: italic;
 }
+/*モーダル*/
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: grey;
+    opacity: .6;
+    display: none;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.modal {
+    width: 900px;
+    height: 530px;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: pink;
+    display: none;
+    z-index: 1000;
+    color: #fff;
+}
+.modal img {
+    width: 350px;
+}
+.modal h2 {
+    margin-top: 20px;
+}
+.modal p {
+    position: absolute;
+    z-index: 10;
+    font-size: 24px;
+    font-weight: bold;
+}
+.modalContents {
+    width: 820px;
+    padding-left: 40px;
+}
+.modalPic {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px;
+}
+.modalCloseWrap {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.modalClose {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.modalClose span {
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: black;
+    display: block;
+}
+.modalClose span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.modalClose span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+.modal,
+.overlay {
+    display: none;
+}
+.modal.open,
+.overlay.open {
+    display: block;
+}
+.modalOpen {
+    text-decoration: underline;
+}
+.modalOpen:hover {
+    opacity: 0.7;
+}
+/*モーダルここまで*/
+
 
 /*My Works*/
 #myWork a:hover {

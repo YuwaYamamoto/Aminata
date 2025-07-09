@@ -92,7 +92,7 @@ h1:after {
 }
 
 /*About Me*/
-#aboutMe img {
+#aboutMe figure img {
     width: 25vw;
     object-fit: cover;
 }
@@ -144,8 +144,8 @@ figcaption .italic {
     z-index: 1000;
     color: #fff;
 }
-.modal img {
-    width: 350px;
+.modalPic img {
+    width: 320px;
 }
 .modal h2 {
     margin-top: 20px;
@@ -351,7 +351,7 @@ small {
         margin: 40 auto;
     }
     /*about me レスポンシブ*/
-    #aboutMe img {
+    #aboutMe figure img {
         width: 100%;
     }
     #aboutMe figcaption {
@@ -363,6 +363,34 @@ small {
     .africa {
         display: block;
         margin-top: 40px;
+    }
+
+    /*モーダル*/
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .modal {
+        width: 370px;
+        height: 400px;
+    }
+    .modalPic img {
+        width: 157px;
+    }
+    .modal p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .modalContents {
+        width: 335px;
+        padding-left: 20px;
+    }
+    .modalContents h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .modalContents p {
+        padding-top: 20px;
     }
     
     /*MyWorkレスポンシブ*/

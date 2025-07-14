@@ -282,6 +282,10 @@ figcaption .italic {
     background-color: #ffffff;
     color: rgb(188, 143, 143);
 }
+#socialMedia .video {
+    text-align: center;
+    font-size: 16px;
+}
 
 /*footer*/
 #pageTop {
